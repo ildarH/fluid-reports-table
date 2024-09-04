@@ -1,6 +1,6 @@
 import { type ClassValue, clsx } from 'clsx'
 import { twMerge } from 'tailwind-merge'
-import { isProxy, isReactive, isRef, type MaybeRef, toRaw, unref } from 'vue'
+import { isProxy, isReactive, isRef, toRaw } from 'vue'
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))

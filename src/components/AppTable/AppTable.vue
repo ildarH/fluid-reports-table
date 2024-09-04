@@ -35,7 +35,12 @@ const rows = computed(() => {
 })
 
 function getCellValue(cell: ReportData[number]) {
-  return typeof cell === 'object' ? cell.data : cell
+  if (typeof cell === 'object') {
+    return cell.data
+  } else if (typeof cell === 'boolean') {
+    return cell ? 'Yes' : 'No'
+  }
+  return cell
 }
 
 function getCellAlignment(cellIndex: number) {

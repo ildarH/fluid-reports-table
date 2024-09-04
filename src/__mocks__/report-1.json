@@ -4,18 +4,19 @@
     {"id": "total_by_project", "type": "float", "caption": "Total by project"},
     {"id": "project_type", "type": "string", "caption": "Project type", "align": "center"},
     {"id": "jan", "type": "float", "caption": "Jan"},
-    {"id": "feb", "type": "float", "caption": "Feb"}
+    {"id": "feb", "type": "float", "caption": "Feb"},
+    {"id": "most_profitable_month", "type": "string", "caption": "Most profitable month", "align": "center"}
   ],
   "data": [
-    ["Mimesis", 1024.3, "commercial", 2048.2, 4096.0],
-    ["Mako", 2345.1, "internal", 3465.3, {"data": 12.5, "color": "selected"}],
-    ["Edelweiss", 54.4, "commercial", 564.8, 4652.3],
-    ["Orion", 879.6, "internal", 1234.5, {"data": 3000.1, "color": "red"}],
-    ["Zephyr", 1500.0, "commercial", {"data": 2000.3, "color": "blue"}, 2564.7],
-    ["Nimbus", 987.5, "internal", 1500.0, 1750.5],
-    ["Phoenix", 765.4, "commercial", 1000.2, {"data": 1100.3, "color": "green"}],
-    ["Aurora", 1456.7, "internal", 1650.0, 1890.2],
-    ["Nebula", 1345.8, "commercial", {"data": 1450.4, "color": "orange"}, 1575.5],
-    ["Vega", 1765.9, "internal", 1850.6, {"data": 1950.7, "color": "purple"}]
+    ["Mimesis", 1024.3, "commercial", 2048.2, 4096.0, false],
+    ["Mako", 2345.1, "internal", 3465.3, {"data": 12.5, "color": "selected"}, true],
+    ["Edelweiss", 54.4, "commercial", 564.8, 4652.3, false],
+    ["Orion", 879.6, "internal", 1234.5, {"data": 3000.1, "color": "red"}, false],
+    ["Zephyr", 1500.0, "commercial", {"data": 2000.3, "color": "blue"}, 2564.7, false],
+    ["Nimbus", 987.5, "internal", 1500.0, 1750.5, false],
+    ["Phoenix", 765.4, "commercial", 1000.2, {"data": 1100.3, "color": "green"}, false],
+    ["Aurora", 1456.7, "internal", 1650.0, 1890.2, false],
+    ["Nebula", 1345.8, "commercial", {"data": 1450.4, "color": "orange"}, 1575.5, false],
+    ["Vega", 1765.9, "internal", 1850.6, {"data": 1950.7, "color": "purple"}, false]
   ]
 }

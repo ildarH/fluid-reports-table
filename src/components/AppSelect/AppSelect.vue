@@ -22,7 +22,7 @@ defineProps<SelectProps>()
       <SelectValue :placeholder="placeholder" />
     </SelectTrigger>
     <SelectContent>
-      <SelectItem v-for="(value, key) in options" :value="key" :key="`${key}-select-value`">
+      <SelectItem v-for="(value, key) in options" :value="`${key}`" :key="`${key}-select-value`">
         {{ value }}
       </SelectItem>
     </SelectContent>

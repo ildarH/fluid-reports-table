@@ -1,19 +1,14 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import DefaultLayout from '@/layout/DefaultLayout.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
+  <header class="container mx-auto">
+    <h1 class="text-2xl mx-auto py-5">Reports</h1>
   </header>
 
   <main>
-    <TheWelcome />
+    <DefaultLayout />
   </main>
 </template>
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { ArrowUpDown, ArrowUpWideNarrow, ArrowDownWideNarrow } from 'lucide-vue-next'
+import { ArrowUpDown, ArrowUpWideNarrow, ArrowDownWideNarrow, LoaderCircle } from 'lucide-vue-next'
 import {
   Table,
   TableBody,
@@ -88,13 +88,17 @@ function handleSort(field: string) {
 </script>
 
 <template>
+  <div v-if="loading" class="flex items-center justify-center h-96">
+    <LoaderCircle class="w-12 h-12 text-sky-300 animate-spin" />
+  </div>
   <Table
+    v-else
     class="shadow-sm focus:ring-1 ring-ring"
     tabindex="0"
     role="region"
     aria-labelledby="tableCaption"
   >
-    <TableCaption>{{ title }}</TableCaption>
+    <TableCaption class="text-right">{{ title }}</TableCaption>
     <TableHeader>
       <TableRow class="bg-sky-700 hover:bg-sky-800">
         <TableHead

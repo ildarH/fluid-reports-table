@@ -21,11 +21,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-    build:
-      environment:
+  build:
+    environment:
       name: github-pages
-    url: ${{steps.deployment.outputs.page_url}}
-    runs-on: ubuntu-latest
+      url: ${{ steps.deployment.outputs.page_url }}
+  runs-on: ubuntu-latest
 
 strategy:
   matrix:

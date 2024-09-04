@@ -41,7 +41,7 @@ watch(
       </div>
       <Alert v-if="error" class="mt-10 text-red-500">
         <AlertTitle> Warning </AlertTitle>
-        <AlertDescription> {{ error?.message || 'Error getting report' }} </AlertDescription>
+        <AlertDescription> {{ error || 'Error getting report' }} </AlertDescription>
       </Alert>
       <Table
         v-else

@@ -5,7 +5,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue
-} from '@/components/ui/select'
+} from '@/components/UI/select'
 import type { SelectOption } from '@/@types/components'
 
 interface SelectProps {

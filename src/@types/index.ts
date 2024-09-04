@@ -13,7 +13,7 @@ export interface DataValue {
   color?: string
 }
 
-export type ReportData = (string | number | DataValue)[]
+export type ReportData = (string | number | boolean | DataValue)[]
 
 export interface Report {
   header: ReportHeader[]

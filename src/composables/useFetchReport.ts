@@ -50,6 +50,9 @@ export const useFetchReport = () => {
     order: SortDirection
   }) {
     if (!report.value) return
+
+    loading.value = true
+
     currentSortField.value = field
     currentSortDirection.value = order
     const data = deepToRaw(report.value.data)
@@ -65,6 +68,10 @@ export const useFetchReport = () => {
       })
       report.value.data = data
     }
+
+    setTimeout(() => {
+      loading.value = false
+    }, CONFIG.MOCK_DELAY)
   }
 
   return { report, error, loading, fetchReport, sortTable, currentSortField, currentSortDirection }

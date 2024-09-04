@@ -1,0 +1,20 @@
+{
+  "header": [
+    {"id": "product_name", "type": "string", "caption": "Product Name"},
+    {"id": "category", "type": "string", "caption": "Category", "align": "center"},
+    {"id": "units_sold", "type": "int", "caption": "Units Sold"},
+    {"id": "revenue", "type": "float", "caption": "Revenue ($)"}
+  ],
+  "data": [
+    ["Smartphone X100", "Electronics", 1200, {"data": 839988.0, "color": "green"}],
+    ["Laptop Pro 15", "Computers", 450, 584977.5],
+    ["Wireless Headphones", "Accessories", 800, {"data": 159992.0, "color": "orange"}],
+    ["Gaming Console Z", "Entertainment", 600, 239700.0],
+    ["4K Monitor 27\"", "Computers", 300, 104997.0],
+    ["Bluetooth Speaker", "Accessories", 1500, 134925.0],
+    ["Smartwatch Series 5", "Electronics", 750, 187492.5],
+    ["External Hard Drive 2TB", "Computers", 900, {"data": 71991.0, "color": "red"}],
+    ["Action Camera Pro", "Electronics", 500, 149995.0],
+    ["Wireless Charger", "Accessories", 2500, 74875.0]
+  ]
+}

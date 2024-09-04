@@ -1,0 +1,21 @@
+{
+  "header": [
+    {"id": "employee_name", "type": "string", "caption": "Employee Name"},
+    {"id": "department", "type": "string", "caption": "Department", "align": "right"},
+    {"id": "tasks_completed", "type": "int", "caption": "Tasks Completed", "align": "right" },
+    {"id": "hours_worked", "type": "float", "caption": "Hours Worked", "align": "center"},
+    {"id": "performance_rating", "type": "float", "caption": "Performance Rating"}
+  ],
+  "data": [
+    ["Alice Johnson", "Engineering", 35, 160.5, 4.8],
+    ["Bob Smith", "Marketing", 28, 150.0, 4.5],
+    ["Catherine Adams", "Engineering", 40, 170.2, {"data": 4.9, "color": "green"}],
+    ["David Brown", "Human Resources", 25, 140.8, 4.3],
+    ["Emily Davis", "Finance", 30, 155.4, 4.7],
+    ["Frank Wilson", "Engineering", 38, 162.3, 4.6],
+    ["Grace Lee", "Marketing", 29, 148.0, {"data": 4.4, "color": "orange"}],
+    ["Henry Miller", "Finance", 27, 145.6, 4.5],
+    ["Isabella White", "Human Resources", 32, 150.9, 4.6],
+    ["Jack Green", "Engineering", 37, 165.0, {"data": 4.7, "color": "blue"}]
+  ]
+}

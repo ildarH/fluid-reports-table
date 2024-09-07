@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { ArrowUpDown, ArrowUpWideNarrow, ArrowDownWideNarrow, LoaderCircle } from 'lucide-vue-next'
+import { ArrowUpDown, ArrowUpWideNarrow, ArrowDownWideNarrow } from 'lucide-vue-next'
 import {
   Table,
   TableBody,
@@ -10,6 +10,7 @@ import {
   TableHeader,
   TableRow
 } from '@/components/UI/table'
+import TableLoader from '@/components/AppTable/TableLoader.vue'
 import type { Report, ReportData } from '@/@types'
 import type { SortDirection } from '@/@types/components'
 
@@ -88,8 +89,8 @@ function handleSort(field: string) {
 </script>
 
 <template>
-  <div v-if="loading" class="flex items-center justify-center h-96">
-    <LoaderCircle class="w-12 h-12 text-sky-300 animate-spin" />
+  <div v-if="loading" class="flex items-center justify-center">
+    <TableLoader />
   </div>
   <Table
     v-else

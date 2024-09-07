@@ -34,8 +34,8 @@ const skeletonOptions = ref({
           class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted odd:bg-sky-50 even:bg-sky-100"
         >
           <td
-            v-for="(_, colemn) in skeletonOptions.columns"
-            :key="`${colemn}-skeleton-cell`"
+            v-for="(_, column) in skeletonOptions.columns"
+            :key="`${column}-skeleton-cell`"
             class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-left"
           >
             <div
